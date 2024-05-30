@@ -1,0 +1,188 @@
+body {
+    min-height: 100vh;
+    background-image: url(../assets/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__pdm{
+    width: 300px;
+}
+
+header {
+    margin: 0 0 2rem 0;
+}
+
+header .logo {
+    cursor: pointer;
+    width: 150px;
+}
+
+main.container {
+    width: 80vw;
+    height: 70vh;
+    border: 2px solid #00F4BF;
+    padding: 0 60px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.container h1 {
+    font-size: 50px;
+}
+
+main.container h1 span {
+    color: #1875E8;
+}
+
+.comprar {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+form .input-group {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+form .input-group select,
+form .input-group input {
+    background: none;
+    color: white;
+    border: 1px solid #00F4BF;
+    border-radius: .5rem;
+    height: 3.5rem;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    height: 40px;
+}
+
+form .input-group select {
+    width: 100%;
+    appearance: none;
+    background: url('../assets/PNG/Arrow\ down.png') no-repeat right 0rem top 50%;
+    color: black;
+    background-color: white;
+    outline: none;
+}
+
+form .input-group select:hover {
+    background-color: #c6c6c6;
+}
+
+form .input-group input {
+    width: 60px;
+    transition: 200ms;
+}
+
+form .input-group input:hover {
+    background-color: #ffffff4f;
+}
+
+form .input-group input::placeholder {
+    text-align: center;
+}
+
+button {
+  background-color: #1875E8;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  width: 40%;
+  font-size: 15px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+button:before {
+  background-color: #0e478d;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+button:hover:before {
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+button span {
+  z-index: 1;
+  position: relative;
+}
+
+.info {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.info img {
+    width: 100px;
+}
+
+
+.container section h2 {
+    font-size: 40px;
+}
+
+.container section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.container section ul li span {
+    color: #00F4BF;
+    font-style: italic;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
+
+.macaco {
+    position: absolute;
+    bottom: -35px;
+    height: 570px;
+}
